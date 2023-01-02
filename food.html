@@ -1,13 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="food.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Restaurants</title>
 </head>
 <body>
-    
+    <header class="home-header">
+        <h1 class='home-main-title'>Bienvenue a Superland, le parc d'attraction trop trop rigolo !</h1>
+    </header>
+    <nav>
+        <div class="nav-logo-container">
+            <a href="#">
+                <img class="nav-logo" src="https://sandiegozoowildlifealliance.org/themes/custom/park_stable/images/sdzwa-green.svg" alt="navbar logo">
+            </a>
+        </div>
+        <div class="navlink-container">
+            <input type="checkbox" class="toggle-btn">
+            <div class="burger-menu"></div>
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#">Animaux</a></li>
+                <li class="selected-page"><a href="./food.html">Boutique</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h2 class="page-title">Les restaurants</h2>
+    <div class="container-food">
+        <section class="restaurant">
+            <img src="https://cdn.pixabay.com/photo/2016/03/05/23/02/barbecue-1239434_960_720.jpg" alt="grillades" class="img-food">
+            <h3 class="title-retaurant">Nos grillades</h3>
+            <div class="food-price">
+                <p>Prix : 20 euros</p>
+                <p><label for="grills-qty">Quantité : </label> 
+                <select name="grills-qty" id="grills-qty">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select></p>
+                <p>Prix total : <span id="grills-price">0</span> euros</p>
+                <div class="dislike like-container" id="grills-like"></div>
+            </div>
+            
+        </section>
+    </div>
 </body>
 </html>
