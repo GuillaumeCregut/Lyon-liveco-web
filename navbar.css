@@ -33,6 +33,8 @@ nav {
 .navlink-container {
     display: flex;
     align-items: center;
+
+    
 }
 
 .menu {
