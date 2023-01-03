@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="animals.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants</title>
+</head>
+<body>
+    <header class="home-header">
+        <h1 class='home-main-title'>Bienvenue a Superland, le parc d'attraction trop trop rigolo !</h1>
+    </header>
+    <nav>
+        <div class="nav-logo-container">
+            <a href="#">
+                <img class="nav-logo" src="https://sandiegozoowildlifealliance.org/themes/custom/park_stable/images/sdzwa-green.svg" alt="navbar logo">
+            </a>
+        </div>
+        <div class="navlink-container">
+            <input type="checkbox" class="toggle-btn">
+            <div class="burger-menu"></div>
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li class="selected-page"><a href="#">Animaux</a></li>
+                <li><a href="./food.html">Boutique</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h2 class="page-title">Les restaurants</h2>
+ 
+    </div>
+    <script src="./.js"></script>
+</body>
+</html>

@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.selected-page{
+    text-decoration: underline;
+}
+
 .home-header {
     height: 20vh;
     background-color: #0087C6;
