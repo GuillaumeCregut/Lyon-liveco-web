@@ -57,12 +57,27 @@
     transform: rotateY(180deg);
 }
 
+.admin-section {
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.admin-section>h3,.admin-section>h4 {
+    text-align: center;
+}
 /* Formulaire */
 .form-add{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+   
 }
+
 .form-add>label{
     margin-top: 10px;
 }
+
+.btn-submit{
+    width: 100px;
+}
+
