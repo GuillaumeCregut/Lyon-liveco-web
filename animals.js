@@ -23,6 +23,7 @@ const createAnimalCard=(animal)=>{
     //création du titre
     const animalName=document.createElement('h3');
     animalName.innerHTML=animal.name;
+    animalName.classList.add('animal-name');
     //Création de la description
     const animalDesc=document.createElement('p');
     animalDesc.innerHTML=animal.description;

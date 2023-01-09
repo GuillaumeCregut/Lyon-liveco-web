@@ -81,3 +81,8 @@
     width: 100px;
 }
 
+.animal-name{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
