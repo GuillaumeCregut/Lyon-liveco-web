@@ -32,8 +32,8 @@
     </nav>
     <main>
         <h2 class="page-title">Nos animaux</h2>
-        <div class="animals-container">
-            <section class="flip-card">
+        <section class="animals-container">
+            <article class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img 
@@ -42,12 +42,28 @@
                             class="animal-picture">
                     </div>
                     <div class="flip-card-back">
-                        <h3>Name</h3>
-                        <p>description</p>
+                        <h3>Lion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni vel error incidunt officia, corporis nemo molestias voluptates veniam illum ducimus dicta officiis quisquam, saepe architecto rerum ea inventore temporibus. Quam.</p>
                     </div>
                 </div>
-            </section>
-        </div>
+            </article>
+        </section>
+        <section>
+            <h3>Administration</h3>
+            <h4>Ajouter des animaux</h4>
+            <form action="#" method="get" class="form-add">
+                <label for="animal_name">
+                    Nom de l'animal : 
+                    <input type="text" name="name" id="animal_name">
+                </label>
+                <label for="animal_picture">
+                    Photo de l'animal : 
+                    <input type="text" name="picture" id="animal_picture">
+                </label>
+                <label for="description">description :<br/><textarea id="description"></textarea></label>
+                <input type="submit" value="Ajouter">
+            </form>
+        </section>
     </main>
 </body>
 </html>
