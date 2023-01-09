@@ -1,7 +1,3 @@
-//importation des animaux existants
-const animalList=require('./animalList');
-
-//fonction d'affichage des animaux
 const createAnimalCard=(animal)=>{
     //récupération du conteneur 
     const animalContainer=document.getElementById('animals-container');
@@ -33,5 +29,32 @@ const createAnimalCard=(animal)=>{
     //ajout des éléments au dos de la carte
     backCard.appendChild(animalName);
     backCard.appendChild(animalDesc);
+    //Ajout des faces de la carte au inner card
+    innerCard.appendChild(frontCard);
+    innerCard.appendChild(backCard);
+    //ajout du innercard à la card
+    card.appendChild(innerCard);
+    //ajout de la carte au container
+    animalContainer.appendChild(card);
 }   
 
+for (let i=0;i<animalList.length;i++){
+    createAnimalCard(animalList[i]);
+}
+
+const formAdd=document.querySelector('form');
+formAdd.addEventListener('submit',(e)=>{
+    //On bloque l'envoi du formulaire
+    e.preventDefault();
+    //Récupérations des valeurs
+    const newName=document.getElementById('animal_name').value;
+    const newPicture=document.getElementById('animal_picture').value;
+    const newDesc=document.getElementById('description').value;
+    const newAnimal={
+        name:newName,
+        picture:newPicture,
+        description:newDesc
+    }
+    //Ajout du nouvel animal
+    createAnimalCard(newAnimal);
+})

@@ -1,2 +1,7 @@
-const animalList =[];
-module.exports=animalList;
+const animalList =[
+    {
+        name:'',
+        picture:'',
+        description:''
+    }
+];
