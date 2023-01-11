@@ -21,10 +21,14 @@ const removeCard = (child) => {
  * @param {*} id id de la carte à modifier
  */
 const updateCard = (animal, id) => {
-    //do
-    console.log('Modifie');
+    //Récupération de la carte
+    const CardToModify = document.getElementById(id);
+    CardToModify.querySelector('h3').innerHTML=animal.name;
+    CardToModify.querySelector('p').innerHTML=animal.description;
+    CardToModify.querySelector('img').src=animal.picture
     //reset de l'action par défaut
     defaultAction = 'add';
+    //Empty lines in form
 }
 
 
