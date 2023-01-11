@@ -93,3 +93,54 @@
     justify-content: space-around;
     margin-top: 10px;
 }
+
+.form-add{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height : 150px;
+    margin-bottom: 20px;
+}
+
+#animal_picture{
+    width: 50%;
+}
+
+textarea{
+    width: 80%;
+    height: 80px;
+    padding-left: 5px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+
+.btn-form-container{
+    display: flex;
+    width: 20vw;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .animals-container{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .flip-card{
+        margin-bottom: 50px;
+    }
+
+    .form-add{
+        height: 250px;
+    }
+
+    .btn-form-container{
+        flex-direction: column;
+        height: 50px;
+    }
+    
+    #animal_picture{
+        width: 90%;
+    }
+}
