@@ -3,6 +3,15 @@ let defaultAction = 'add';
 let idModifyCard = 0;
 
 /**
+ * Fonction vidant les champs du formulaire 
+ */
+const emptyFields=()=>{
+   document.getElementById('animal_name').value='';
+   document.getElementById('animal_picture').value='';
+   document.getElementById('description').value='';
+}
+
+/**
  * 
  * Supprime la carte avec l'ID fourni en paramètre
  * 
@@ -28,7 +37,8 @@ const updateCard = (animal, id) => {
     CardToModify.querySelector('img').src=animal.picture
     //reset de l'action par défaut
     defaultAction = 'add';
-    //Empty lines in form
+    //Vide les champs du formulaire
+    emptyFields();
 }
 
 
@@ -127,6 +137,7 @@ const createAnimalCard = (animal) => {
     card.appendChild(btnContainer);
     //ajout de la carte au container
     animalContainer.appendChild(card);
+    emptyFields();
 }
 
 //Permet de modifier la variable globale sur le clic du bouton modifier afin de savoir quel bouton on a cliqué
